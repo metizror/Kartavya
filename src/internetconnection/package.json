@@ -1,0 +1,102 @@
+{
+  "_from": "react-native-internet-connection-alert",
+  "_id": "react-native-internet-connection-alert@0.1.4",
+  "_inBundle": false,
+  "_integrity": "sha512-+QmXhEqpFODLuV30CHSSZHnlNuLziXVxIB4+ZusATR8O3tPD0jSlTRDCPx2Ib4eRBaoKDWiD/k0wN77q09a0Kw==",
+  "_location": "/react-native-internet-connection-alert",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-internet-connection-alert",
+    "name": "react-native-internet-connection-alert",
+    "escapedName": "react-native-internet-connection-alert",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-internet-connection-alert/-/react-native-internet-connection-alert-0.1.4.tgz",
+  "_shasum": "f557286e65171b27e3b4f02fe0474eb7c5651b23",
+  "_spec": "react-native-internet-connection-alert",
+  "_where": "D:\\binary\\workingfolder\\bitbucket-westside\\31-10-2020\\westside",
+  "author": {
+    "name": "FreakyCoder",
+    "email": "kurayogun@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/WrathChaos/react-native-internet-connection-alert/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@react-native-community/netinfo": "^5.9.6",
+    "react-native-dropdownalert": "^4.3.0"
+  },
+  "deprecated": false,
+  "description": "Fully customizable internet connection connection with built-in alert for React Native",
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/react": "^16.9.22",
+    "@types/react-native": "^0.63.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "react-native-typescript-transformer": "^1.2.13",
+    "typescript": "^3.7.4"
+  },
+  "homepage": "https://www.freakycoder.com",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "internet",
+    "network",
+    "connection",
+    "check",
+    "internet-connection",
+    "connection",
+    "FreakyCoder",
+    "freakycoder",
+    "kuray",
+    "Kuray",
+    "react",
+    "react-native",
+    "javascript",
+    "ui-lib",
+    "rn"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "./src/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint src/*.js --fix-dry-run"
+    ]
+  },
+  "main": "./build/dist/InternetConnectionAlert.js",
+  "name": "react-native-internet-connection-alert",
+  "peerDependencies": {
+    "react": ">= 16.x.x",
+    "react-native": ">= 0.55.x",
+    "react-native-dropdownalert": "=> 4.3.0",
+    "@react-native-community/netinfo": "=> 5.9.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WrathChaos/react-native-internet-connection-alert.git"
+  },
+  "scripts": {
+    "build": "cd lib && tsc && cp ../package.json ../build/dist/ && Echo Build completed!",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "postversion": "git push && git push --tags",
+    "version": "npm run format && git add -A src"
+  },
+  "version": "0.1.4"
+}
